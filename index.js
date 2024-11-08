@@ -1,3 +1,75 @@
+
+
+function ATM() {
+    const message = parsefloat(
+        prompt(
+            ("1. Check Balance")
+            ("2. Deposit")
+            ("3. Withdraw")
+            ("4. Exit")
+            ("Enter an option: "))     
+    );
+
+    switch (message) {
+        case 1:
+        default:
+            ("1. Check Balance")
+            ("2. Deposit")
+            ("3. Withdraw")
+            ("4. Exit")
+            ("Enter an option: ")
+            break;
+
+        case 2:
+            checkBalance();
+            break;
+        case 3:
+            makeDeposit();
+            break;
+        case 4:
+            withDrawl();
+            break;
+        case 5:
+            accountName()
+            break;
+        case 6:
+            exit();
+            break;
+    }
+}
+function ATM() {
+checkBalance()
+{
+    console.log("here is your current balance kr" + balance)
+}
+ makeDeposit()
+{
+    prompt("enter amount to deposit: kr")
+    console.log("kr" + amount + "has been deposited to your account")
+    checkBalance()
+}
+withDrawl()
+{
+    prompt("enter amount to withdraw: kr")
+    if (amount > balance) {
+        console.log("insufficient money");
+    } else {
+        balance -= amount;
+        console.log("kr" + amount + "mas been withdrawn from your account")
+    }
+    checkBalance();
+}
+accountName()
+{
+    console.log("here is your current account name" + Name)
+}
+
+exit()
+{
+    console.log("thank you, have a good day")
+
+}
+}
 const bankacc = {
     Name: "star",
     country: "Sweden",
@@ -5,65 +77,5 @@ const bankacc = {
     balance: 50000,
     curency: "kronor",
     active: true,
-}
-const pay = {
-    montly: 45000,
-    yearly: 540000,
-}
-const tax = {
-    tax: 20%
-}
-const card = {
-    cardbalance: 2000,
-    curency: "kronor",
-}
-
-const otherBankAcc = {
-    Name: "dark",
-    country: "amaerica",
-    language: "english",
-    balance:3000,
-    curency: "dollar",
-    active: true,
-}
-let withdraw {
-    
-}
-
-function getBalance1{
-console.log(bankacc(balance))
-}
-function getBalance2{
-console.log(otherBankAcc(balance))
-}
-
-function withdrawal{
-if (withdraw >= (bankacc(balance))){ true 
-
-} else(withdraw <  (bankacc(blance)))
-{
-    false(bankacc(balance))
-}
-console.log()
-
-}
-function deposit{
-    if (card(cardbalance > 0 )){ true
-
-    } else(card(cardbalance < 0 )){
-        false
-    }
-    console.log()
-}
-function getAccName1{
-    console.log(bankacc(Name))
-
-}
-function getAccName2{
-    console.log(otherBankAcc(Name))
-
-}
-
-function accError{
-
+    amount: (prompt)
 }
