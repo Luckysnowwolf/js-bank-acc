@@ -2,42 +2,29 @@
 
 function ATM() {
     const message = parsefloat(
-        prompt(
+        let = message = prompt("Enter an option:")
             ("1. Check Balance")
             ("2. Deposit")
             ("3. Withdraw")
             ("4. Exit")
-            ("Enter an option: "))     
-    );
-
+);
     switch (message) {
         case 1:
-        default:
-            ("1. Check Balance")
-            ("2. Deposit")
-            ("3. Withdraw")
-            ("4. Exit")
-            ("Enter an option: ")
-            break;
-
-        case 2:
             checkBalance();
             break;
-        case 3:
+        case 2:
             makeDeposit();
             break;
-        case 4:
+        case 3:
             withDrawl();
             break;
-        case 5:
+        case 4:
             accountName()
             break;
-        case 6:
+        case 5:
             exit();
             break;
     }
-}
-function ATM() {
 checkBalance()
 {
     console.log("here is your current balance kr" + balance)
@@ -69,8 +56,8 @@ exit()
     console.log("thank you, have a good day")
 
 }
-}
-const bankacc = {
+
+let = bankacc = {
     Name: "star",
     country: "Sweden",
     language: "swedish",
@@ -78,4 +65,5 @@ const bankacc = {
     curency: "kronor",
     active: true,
     amount: (prompt)
+}
 }
