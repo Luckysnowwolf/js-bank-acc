@@ -1,5 +1,5 @@
 const bankacc = {
-    Name: "star",
+    Name: "lucas",
     country: "Sweden",
     language: "swedish",
     balance: 50000,
@@ -14,30 +14,29 @@ const bankacc = {
  makeDeposit: function()
 {
     let amount = prompt("enter amount to deposit: kr")
-    if ( amount > `${this.creditcard}`)
-    {
-        console.log("error, insufficient money on card")
-    } else (`${this.creditcard}` <= amount)
+    if ( amount > `${this.creditcard}`){ 
+    console.log("error, insufficient money on card")
+    } else if (`${this.creditcard}` <= amount) 
     {
     console.log(amount + " kr has been deposited to your account")
     }
     
 },
 withDrawl: function()
-{
+{ 
     let amount = prompt("enter amount to withdraw: kr")
     if (amount > `${this.balance}`) 
     {
         console.log("insufficient money")
-    } else (`${this.balance}` <= amount) 
+    } else if (`${this.balance}` <= amount) 
     {
-        console.log("kr" + amount + "mas been withdrawn from your account")
+        console.log(amount + "kr has been withdrawn from your account")
     }
    
 },
 accountName: function()
 {
-    console.log("here is your current account name" + `${this.Name}`)
+    console.log("here is your current account name" + "  " + `${this.Name}`)
 },
 
 exit()
